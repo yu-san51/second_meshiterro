@@ -15,9 +15,9 @@
                     <% end %>
                   </div>
                 </div>
-
+                <%= attachment_image_tag post_image.user, :profile_image, size:"60x60", fallback: "no_image.jpg", class: "img-circle pull-left profile-thumb" %>
                 <div class="block-content">
-                  <%= image_tag('sample-author1.jpg', class: "img-circle pull-left profile-thumb") %>
+
                   <h3 class="block-title">
                     <%= link_to post_image_path(post_image.id) do %>
                       <i class="fa fa-map-marker"></i><%= post_image.shop_name%>
